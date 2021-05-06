@@ -4,6 +4,7 @@
 
 ```sh
 npm config list
+npm config list -l # additional info
 ```
 
 ## Set
