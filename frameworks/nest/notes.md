@@ -1,26 +1,5 @@
 # NestJS
 
-```bash
-# Create new project
-nest new `project-name` # Create boilerplate
-nest new  nestjs-task-management
-
-# Create a module
-nest g module `module-name` # g for generate
-nest g module tasks # Create a `tasks` folder in src
-nest g module auth
-
-# Create a controller in a module
-nest g controller `module-name` --no-spec # Additionally add the schematics to the module.ts (imports)
-nest g controller tasks --no-spec
-nest g controller auth --no-spec
-
-# Create a service in a module
-nest g service `module-name` --no-spec # Created as a provider decorated with @Injectable
-nest g service tasks --no-spec
-nest g service auth --no-spec
-```
-
 - Delete:
   - app.controller.spec.ts
   - app.controller.ts
@@ -33,6 +12,25 @@ nest g service auth --no-spec
   - tsconfig.json: How to compile the code
   - tsconfig.build.json: How to compile for production.
   - package.json: Dependencies
+
+## CLI
+
+```shell
+# Create new project
+nest new "project-name" # Create boilerplate
+nest new  "nestjs-task-management"
+```
+
+```shell
+# Create a module
+nest generate "module" "module-name" # g for generate
+
+# Create a controller in a module
+nest generate "controller" "controller-name" --no-spec # Additionally add the schematics to the module.ts (imports)
+
+# Create a service in a module
+nest generate "service" "service-name" --no-spec # Created as a provider decorated with @Injectable
+```
 
 ## NestJS modules
 
@@ -204,7 +202,7 @@ db.query(
 );
 ```
 
-```bash
+```shell
 npm i @nestjs/typeorm # bridge to nestjs to integrate with nestjs
 npm i typeorm # actual typeorm module
 npm i pg # database driver for postgres
