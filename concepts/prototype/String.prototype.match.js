@@ -1,6 +1,7 @@
 const res = "Hello there!".match(/[aeiou]/gi); // returns array of matched letters
 const res2 = "!&654., ".match(/[a-z]/gi); // returns null (no match)
 const res3 = "Hello there!".match(/[^\w]/gi); // non-letters chars (" ", "!")
+const res4 = "/var/lib/".match(/(\/.+)+$/);
 
 console.log(res);
 console.log(res2);
