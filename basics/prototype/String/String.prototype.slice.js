@@ -1,4 +1,4 @@
-text = 'Hey there';
+const text = "Hey there";
 
 // Copy from index 0 to index 2
 const slice = text.slice(0, 3);

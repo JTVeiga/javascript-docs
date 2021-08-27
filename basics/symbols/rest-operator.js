@@ -8,3 +8,18 @@ function printStrings(...keys) {
   console.log(keys); // print an array of strings
 }
 printStrings("apple", "orange", "banana");
+
+// ---
+
+const foo = {
+  a: 1,
+  b: 2,
+};
+
+const bar = {
+  c: 3,
+  d: 4,
+  ...(false && { a: foo.a }),
+  ...(false ? { a: foo.a } : {}),
+};
+console.log(bar);
