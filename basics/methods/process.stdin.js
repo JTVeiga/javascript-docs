@@ -1,8 +1,10 @@
 process.stdin.resume();
 process.stdin.setEncoding("ascii");
 
-const textInput = [];
+process.stdin.resume();
+process.stdin.setEncoding("utf-8");
 
+const textInput = [];
 process.stdin.on("data", (line) => {
   textInput.push(line);
 });
