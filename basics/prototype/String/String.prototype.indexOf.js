@@ -7,5 +7,5 @@ idx = text.indexOf("e");
 console.log(idx);
 
 // Index of a substring
-idx = text.indexOf("er");
+idx = text.indexOf("here");
 console.log(idx);

@@ -4,15 +4,15 @@ process.stdin.setEncoding("ascii");
 process.stdin.resume();
 process.stdin.setEncoding("utf-8");
 
-const textInput = [];
+const textArray = [];
 process.stdin.on("data", (line) => {
-  textInput.push(line);
+  textArray.push(line);
 });
 
 process.stdin.on("end", () => {
-  for (let i = 1; i <= textInput[0]; i++) {
-    if (!textInput[i]) break;
-    const numbers = textInput[i]
+  for (let i = 1; i <= textArray[0]; i++) {
+    if (!textArray[i]) break;
+    const numbers = textArray[i]
       // .trim()
       .split(" ")
       .map((el) => parseInt(el));

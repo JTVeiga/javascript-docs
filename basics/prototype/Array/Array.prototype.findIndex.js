@@ -1,3 +1,4 @@
+// Returns the index of the first element that matches the criteria
 // Similar to find, but instead of returning the value, returns the index
 function isPrime(element, index, array) {
   var start = 2;
