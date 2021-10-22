@@ -1,23 +1,11 @@
-const desserts = [
-  {
-    name: 'pudim',
-    diet: false
-  },
-  {
-    name: 'gelatina',
-    diet: false
-  },
-  {
-    name: 'bolo de chocolate',
-    diet: true
-  },
-  {
-    name: 'pavê',
-    diet: true
-  }
-];
-const isDiet = (item) => item.diet;
+// O(N)
+
+const arr = ["a", "b", "c", "d", "b"];
 
 // Returns the first element that matches the criteria
-const firstDietDessert = desserts.find(isDiet);
-console.log(firstDietDessert);
+const found = arr.find((el) => el === "b");
+console.log(found);
+
+// Returns undefined if not found
+const notFound = arr.find((el) => el === "f");
+console.log(notFound);

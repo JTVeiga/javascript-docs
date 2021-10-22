@@ -1,3 +1,5 @@
+// O(N)
+
 const numbers = [7, 12, 24, 1];
 const isEven = (n) => n % 2 === 0;
 

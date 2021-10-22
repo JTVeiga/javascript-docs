@@ -1,3 +1,5 @@
+// O(N)
+
 const players = [
   {
     name: "Henrique",

@@ -1,3 +1,5 @@
+// O(N)
+
 const purse = ["Credit Card", "Keys", "Money", "Tooth brush", "Perfum"];
 
 // Execute instructions for each element in the array

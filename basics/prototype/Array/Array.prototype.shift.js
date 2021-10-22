@@ -1,3 +1,4 @@
+// O(N)
 // "Shift" removes an element from the beginning of an array
 const arr = [];
 

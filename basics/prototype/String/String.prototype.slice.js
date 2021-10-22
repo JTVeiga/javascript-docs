@@ -11,3 +11,7 @@ console.log(slice2);
 // from first until the second last (penult)
 const slice3 = text.slice(0, -2);
 console.log(slice3);
+
+// only 1 char
+const slice4 = text.slice(0, 1);
+console.log(slice4);

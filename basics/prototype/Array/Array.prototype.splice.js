@@ -1,3 +1,5 @@
+// O(N)
+
 var myFish = ["angel", "clown", "mandarin", "surgeon"];
 console.log(myFish);
 

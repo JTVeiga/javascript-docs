@@ -1,3 +1,5 @@
+// O(N log N)
+
 const numbers = [2, 5, 1000, 3, 4];
 const letters = ["d", "b", "c", "a"];
 

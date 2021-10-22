@@ -1,3 +1,4 @@
+// O(N)
 // "Unshift" adds an element to the beginning of an array
 const arr = [];
 

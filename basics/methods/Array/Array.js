@@ -5,3 +5,6 @@ console.log(arrEmpty);
 // 100-sized-array filled with "0" values
 const arrZeroes = new Array(100).fill(0);
 console.log(arrZeroes);
+
+// loop
+new Array(10).fill(0).forEach(() => console.log("hello"));

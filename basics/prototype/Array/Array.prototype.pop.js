@@ -1,3 +1,4 @@
+// O(1)
 // "Pop" removes an element from the end of an array
 const arr = [];
 

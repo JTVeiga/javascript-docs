@@ -1,3 +1,5 @@
+// O(N)
+
 letters = ["a", "b", "c", "d", "e", "b"];
 
 index = letters.indexOf("b"); // returns 1, which is the first index of "b"

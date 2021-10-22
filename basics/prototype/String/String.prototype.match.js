@@ -10,4 +10,7 @@ console.log(res4);
 
 // Statement /[]/ matches every item inside of the square braces
 // Option g: don't stop at first match
-// Option i: case insensitives
+// Option i: case insensitive
+
+const singleChar = "a".match(/[aeiou]/gi);
+console.log(singleChar);
