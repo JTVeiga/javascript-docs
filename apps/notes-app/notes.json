@@ -1,1 +1,14 @@
-[{"title":"t","body":"b"},{"title":"title","body":"body"},{"title":"Compras","body":"Arroz"}]
+[
+  {
+    "title": "t",
+    "body": "b"
+  },
+  {
+    "title": "title",
+    "body": "body"
+  },
+  {
+    "title": "Compras",
+    "body": "Arroz"
+  }
+]

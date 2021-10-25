@@ -1,0 +1,2 @@
+//Exit application
+process.exit();
