@@ -1,4 +1,4 @@
-// Memoized functions store the functon itself an a cache object
+// Memoized functions store the function itself an a cache object
 
 function memoize(fn) {
   const cache = {};

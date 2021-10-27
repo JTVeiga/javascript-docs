@@ -9,3 +9,5 @@ console.log(slice);
 console.log(slice1);
 console.log(slice2);
 console.log(slice3);
+
+const out = letters.slice(0, -1); // same as letters.pop()
