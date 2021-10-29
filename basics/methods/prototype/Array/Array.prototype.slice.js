@@ -1,3 +1,5 @@
+// O(n) -> n = end-start
+
 letters = ["a", "b", "c", "d", "e"];
 
 slice = letters.slice(); // copy everything
