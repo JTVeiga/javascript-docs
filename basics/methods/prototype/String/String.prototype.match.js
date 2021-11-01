@@ -12,5 +12,5 @@ console.log(res4);
 // Option g: don't stop at first match
 // Option i: case insensitive
 
-const singleChar = "a".match(/[aeiou]/gi);
-console.log(singleChar);
+const a = "aeiouhyhyhy".match(new RegExp(/[aeiou]/gi));
+console.log(a);
