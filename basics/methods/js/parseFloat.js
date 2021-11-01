@@ -4,8 +4,6 @@ const notNumber = "t999";
 // Convert the price into float number
 const numberFloat = parseFloat(number);
 const notNumberFloat = parseFloat(notNumber);
-
-// Convert the price into float number
 console.log(numberFloat);
 console.log(notNumberFloat);
 

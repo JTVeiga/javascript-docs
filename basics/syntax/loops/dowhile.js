@@ -1,8 +1,8 @@
-const purse = ['Credit Card', 'Keys', 'Money', 'Tooth brush', 'Perfum'];
+const arr = [1, 2, 3];
 
 // Do the repetition once and then check the statement
 let i = 0;
 do {
-  console.log(purse[i]);
+  console.log(arr[i]);
   i++;
-} while (i < purse.length);
+} while (i < arr.length);

@@ -1,34 +1,12 @@
-const family = [
-  {
-    name: 'Henrique',
-    age: 19
-  },
-  {
-    name: 'Laís',
-    age: 28
-  },
-  {
-    name: 'Luiz',
-    age: 30
-  },
-  {
-    name: 'Simone',
-    age: 17
-  }
-];
-const charMap = {
-  H: 1,
-  e: 2,
-  n: 3,
-  r: 4
-};
+const arr = ["a", "b", "c"];
+const obj = { a: 1, b: 2, c: 3 };
 
 // Iterates by the index
-for (let index in family) {
-  console.log(family[index]);
+for (let index in arr) {
+  console.log(index, arr[index]);
 }
 
 // Iterates by the key in an object
-for (let key in charMap) {
-  console.log(charMap[key]);
+for (let key in obj) {
+  console.log(key, obj[key]);
 }

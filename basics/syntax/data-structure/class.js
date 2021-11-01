@@ -2,18 +2,18 @@ class Food {
   // Property
   foodName = "No food yet!";
 
-  // Static Property
+  // Static property
   static description = "This class represents foods!";
 
-  // The constructor is run upon instantiating
+  // The constructor is run upon instantiating the class object
   constructor(name) {
     this.foodName = name; // create or assign value to a property
   }
 
-  // Method
+  // Method: Methods in JS classes are stored in the prototype
   printName() {
     console.log(this.foodName);
-  } // Methods in JS classes are stored in the prototype
+  }
 
   // Static method
   static printDescription() {
@@ -69,5 +69,3 @@ arrowPrint(); // return 'red' ... POK
 
 // THIS in arrow functions refers to the object instantiated
 // THIS in normal function refers to what is written to the left
-
-// ---
