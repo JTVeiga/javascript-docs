@@ -1,5 +1,6 @@
 /**
- * Gerators are functions that can be exited and later re-entered. Returns a Generator Object
+ * Generators are functions that can be exited and later re-entered.
+ * Their context (variable bindings) will be saved across re-entrances.
  * Arrow-functions cannot be used as generators!
  */
 
