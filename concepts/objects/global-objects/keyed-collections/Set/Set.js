@@ -1,4 +1,6 @@
 const set = new Set(["b", "c", "a"]);
+console.log(set);
+console.log(set.size);
 
 set.add("d");
 set.add("a"); // no effect - "a" already exists

@@ -1,3 +1,6 @@
+var obj = {}; // Empty object
+var obj = new Object(); // Empty object
+
 // Object is a structure of key-value pairs
 // The 'key' is ALWAYS a string, although it can be fed with plain text without quotes
 var meuDog = {
