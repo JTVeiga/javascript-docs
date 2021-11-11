@@ -1,5 +1,4 @@
 // Arrow Function - Anonymous function
-
 const square1 = function (x) {
   return x * x;
 };
