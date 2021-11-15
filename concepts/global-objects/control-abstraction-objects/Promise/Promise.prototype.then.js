@@ -1,6 +1,4 @@
-const myPromise = new Promise((resolve, reject) => {
-  resolve("Resolved!");
-});
+const myPromise = new Promise((resolve) => resolve("Resolved!"));
 
 myPromise.then((result) => {
   console.log("Success!", result);

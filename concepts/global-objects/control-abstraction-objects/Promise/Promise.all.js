@@ -1,18 +1,14 @@
-const promise1 = Promise.resolve(3);
-const promise2 = 42;
-const promise3 = new Promise((resolve, reject) => {
-  setTimeout(resolve, 100, "foo");
-});
+const promise1 = Promise.resolve("promise1");
+const promise2 = Promise.reject("promise2");
+const promise3 = "promise3";
+const promise4 = new Promise((resolve) => setTimeout(resolve, 100, "promise4"));
 
-// Wait for all promises to be resolved, or for any to be rejected.
-Promise.all([promise1, promise2, promise3])
-  // return only when all promises have been resolved
-  .then((values) => {
-    console.log(values);
+// "then" is executed when and if all promises are resolved
+// "catch" is executed if any promise is rejected
+Promise.all([promise1, promise2, promise3, promise4])
+  .then((res) => {
+    console.log(res); // array with the results from each resolved promise
   })
-  // rejects immediately after any rejection
-  .catch((values) => {
-    console.log(values);
+  .catch((res) => {
+    console.log(res); // result of the first rejected promise
   });
-
-// expected output: Array [3, 42, "foo"]
