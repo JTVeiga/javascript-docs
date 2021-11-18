@@ -1,3 +1,8 @@
-// Watch events
-process.on("SIGINT", () => console.log("Closing")); // Watch for interrupt signals
-process.on("SIGTERM", () => console.log("Closing")); // Watch for terminate signals
+// Interrupt
+process.on("SIGINT", () => console.log("Closing"));
+
+// Terminate
+process.on("SIGTERM", () => console.log("Closing"));
+
+// Exception
+process.on("uncaughtException", () => console.log("Exception"));
