@@ -1,3 +1,6 @@
+const fs = require("fs");
+
 const dataBuffer = fs.readFileSync("notes.json");
-const dataJSON = dataBuffer.toString();
-JSON.parse(dataJSON);
+const dataParsed = JSON.parse(dataBuffer.toString());
+
+console.log(dataParsed);
