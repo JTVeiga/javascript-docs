@@ -3,7 +3,7 @@
 // a [seconds, nanoseconds]
 
 let obj = { a: 1 };
-for (let i = 0; i < 23; i++) {
+for (let i = 0; i < 20; i++) {
   obj = { obj1: obj, obj2: obj }; // Doubles in size each iter
 }
 
