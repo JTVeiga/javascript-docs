@@ -1,5 +1,3 @@
-console.log("Starting");
-
 // Run code after a time has passed. setTimeout(fn, t)
 setTimeout(() => {
   console.log("2 seconds timer");
@@ -10,4 +8,6 @@ setTimeout(() => {
   console.log("0 second timer");
 }, 0);
 
-console.log("Stopping");
+console.log(
+  "I get executed before anything, before I don't go to the event loop"
+);
