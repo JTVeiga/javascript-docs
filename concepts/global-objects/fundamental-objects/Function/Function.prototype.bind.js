@@ -15,3 +15,17 @@ console.log(result);
 // 1: rock
 // 2: paper
 // 3: scissors
+
+// ---
+
+function whodis() {
+  console.log(this);
+}
+
+const jeff = {
+  face: "🥰",
+};
+
+// explicitly set a "this" for a function. "this" is now the object "jeff"
+const itsJeff = whodis.bind(jeff);
+itsJeff();

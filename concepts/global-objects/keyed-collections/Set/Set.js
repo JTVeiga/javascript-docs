@@ -1,5 +1,6 @@
 const set = new Set(["b", "c", "a"]);
-console.log(set);
+console.log(set); // Set(3) { 'b', 'c', 'a' }
+console.log(...set); // b c a
 
 //
 

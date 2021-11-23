@@ -3,6 +3,7 @@ const myFn = (text) => {
   console.log(text);
 };
 myFn.apply(this, ["oi", "haha"]); // 1st arg: oi, 2nd arg: haha (not used by the function)
+myFn.apply(null, ["oi", "haha"]); // first arg refers to the desired "this" context -- can be null
 
 // -- memoize
 function memoize(fn) {
