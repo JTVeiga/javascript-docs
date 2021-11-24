@@ -12,3 +12,11 @@ Promise.all([promise1, promise2, promise3, promise4])
   .catch((res) => {
     console.log(res); // result of the first rejected promise
   });
+
+//
+(async () => {
+  // same as promise.all: wait the array of promises to resolve concurrently and loop over it after all promises have been resolved
+  for await (const res of [promise1, promise2, promise3, promise4]) {
+    console.log(res);
+  }
+})();

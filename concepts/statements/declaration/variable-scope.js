@@ -1,6 +1,6 @@
-var myVar = "Henrique"; // accessible throughout the whole program
-let myLet = "Vitoi"; // accessible only in the section that it was declared
-const myConst = 3.14; // cannot be changed
+var myVar = "Henrique"; // global variable
+let myLet = "Vitoi"; // block variable
+const myConst = 3.14; // block variable (immutable)
 
 function checkScopeVar() {
   var scope = "Function Scope";
@@ -21,3 +21,13 @@ function checkScopeLet() {
   console.log(scope);
 }
 checkScopeLet();
+
+function checkScopeConst() {
+  const scope = "Function Scope";
+  if (true) {
+    const scope = "Block Scope"; // keep the outter scope variable
+    console.log(scope);
+  }
+  console.log(scope);
+}
+checkScopeConst();

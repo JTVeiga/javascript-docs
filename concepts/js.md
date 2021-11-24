@@ -27,5 +27,19 @@
   - JS first processes all synchronous code and then the asynchronous code from event loop
   - For each round of the event loop
     1. Run sync code
-    1. Run Promise or microtask callbacks
-    1. Run async task callbacks
+    1. Run microtask callbacks (e.g., Promises)
+    1. Run macrotask callbacks -> async task callbacks
+
+```javascript
+// 1st
+console.log("sync1");
+
+// 4th
+setTimeout((_) => console.log("timeout"), 0);
+
+// 3rd
+Promise.resolve().then((_) => console.log("promise"));
+
+// 2nd
+console.log("sync2");
+```
