@@ -71,30 +71,36 @@ arrowPrint(); // return 'red' ... POK
 // THIS in normal function refers to what is written to the left
 
 /**
- * Getter / Accessor
+ * Getter (accessor) & Setter
  */
 
-//A method inside of a class that can be called as a property
+class BankAccount {
+  name;
+  amount;
 
-class Word {
-  constructor() {
-    this.myWords = ["banana", "apple", "pineapple"];
-  }
-  printSomething(something) {
-    console.log(something);
+  constructor(name) {
+    this.name = name;
   }
 
-  // Getter returning a property!
-  get length() {
-    return this.myWords.length;
+  get aamount() {
+    return this.amount;
   }
 
-  // Getter returning a function!
-  get justPrint() {
-    return this.printSomething;
+  set aamount(value) {
+    if (!value) {
+      throw "Invalid data";
+    }
+    this.amount = value;
+  }
+
+  get lol() {
+    return "lol";
   }
 }
 
-const words = new Word();
-console.log(words.length); // get length
-words.justPrint("Hey there!"); // get justPrint
+const account = new BankAccount("Henry");
+console.log(account.name);
+account.aamount = "1000";
+console.log(account.aamount);
+
+console.log(account.lol);
