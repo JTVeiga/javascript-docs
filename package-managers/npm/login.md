@@ -2,5 +2,5 @@
 
 ```sh
 npm login
-npm login --registry "http://10.129.178.173:8082/repository/microservicos-api-npm/" --scope "@microservicos-api"
+npm login --registry "http://my-private-repo:8082/repository/microservices-api-npm/" --scope "@microservicos-api"
 ```
