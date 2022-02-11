@@ -1,7 +1,7 @@
 const exactMatch = new RegExp(/bob/);
 const oneOrOtherPlusSomething = new RegExp(/(bob|alice)smith/);
 
-const colorColour = new RegExp(/colou?r/); // "u" can occur 0 or 1 item
+const colorColour = new RegExp(/colou?r/); // "u" can occur 0 or 1 time
 const colorrrrr = new RegExp(/color*/); // "r" can occur 0 or multiple times
 const colorrrr = new RegExp(/color+/); // "r" can occur 1 or multiple times
 const colorr = new RegExp(/color{2,6}/); // "r" can occur 2 to 6 times
