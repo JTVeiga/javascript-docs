@@ -16,6 +16,15 @@ console.log(result);
 // 2: paper
 // 3: scissors
 
+const giveMe2Arrow = (b, c) => giveMe3("rock", b, c);
+const giveMe1Arrow = (c) => giveMe2Arrow("paper", c);
+const resultArrow = giveMe1Arrow("scissors");
+
+console.log(result);
+// 1: rock
+// 2: paper
+// 3: scissors
+
 // ---
 
 function whodis() {

@@ -6,9 +6,8 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const completion = await openai.createCompletion("text-davinci-001", {
-  // prompt: "tweet something cool for #techtwitter",
-  prompt: "quem sou eu",
-  max_tokens: 500,
+  prompt: "O que é Indústria 4.0",
+  max_tokens: 200,
 });
 
 console.log(completion.data.choices[0].text);
