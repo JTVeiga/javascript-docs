@@ -1,8 +1,8 @@
-// exporting "foo.js"
+// exporting by "foo.js"
 export default function () {
   console.log("hello!");
 }
 
-// importing "foo.js"
-import bar from "foo";
-foo(); // hello!
+// importing from "foo.js"
+import awesomeFunction from "foo";
+awesomeFunction(); // hello!
