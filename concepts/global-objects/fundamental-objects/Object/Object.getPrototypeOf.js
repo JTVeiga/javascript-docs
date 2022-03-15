@@ -12,5 +12,6 @@ const plane = new Plane();
 console.log(plane);
 
 // Methods are stored in the Plane prototype!
-console.log(plane.prototype);
+console.log(plane.prototype); // not good practice!
+console.log(plane.__proto__); // not good practice!
 console.log(Object.getPrototypeOf(plane));
