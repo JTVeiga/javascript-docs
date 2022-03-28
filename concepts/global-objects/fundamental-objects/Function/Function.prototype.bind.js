@@ -1,3 +1,8 @@
+// Currying is the process of taking some function that accepts multiple arguments,
+// and turning it into a sequence of functions, each accepting a single argument.
+// Or put another way, to transform a function with multiple arguments into a chain
+// of single-argument functions.
+
 function giveMe3(item1, item2, item3) {
   return `
     1: ${item1}
